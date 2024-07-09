@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <script src="https://cdn.userway.org/widget.js" data-account="xa4iQi6Zep"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalle del Producto - Mahú</title>
@@ -10,7 +11,7 @@
 </head>
 <body>
     <header id="mainHeader">
-        <a href="index.html">
+        <a href="Index.html">
         <img src="logoMahu.png" alt="Logo Mahu" class="logo">
         </a>
         <div class="user-options">
@@ -22,7 +23,9 @@
             <button>🔍</button>
         </div>
         <div class="user-options">
-            <div>Mis Pedidos</div>
+            <a href="Seguimiento de producto.html" class="user-options">
+                <div>Mis Pedidos</div>
+            </a>
             <div onclick="openModal()">Iniciar Sesión</div>
             <div>🛒</div>
         </div>
@@ -68,6 +71,37 @@
                 <div class="d-grid gap-2 col-6 mx-auto">
                     <div class="card-footer bg-transparent"><button type="button" class="btn btn-outline-success">Comfirmar Compra</button></div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="container-login">
+                <h2>Iniciar sesión</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn">Iniciar sesión</button>
+                    </div>
+                    <div class="form-group">
+                        
+                        <a href="#" class="social-btnf facebook">
+                            <img src="facebook.png" alt="Facebook">
+                        </a>
+                        <a href="#" class="social-btn google">
+                            <img src="google.png" alt="Google">
+                        </a>
+                    </div>
+                    <p>¿Es tu primera vez? <a href="mahu registrocliente.html">Regístrate</a></p>
+                    <p>¿Olvidaste la contraseña? <a href="#">Recuperar contraseña</a></p>
+                </form>
             </div>
         </div>
     </div>
