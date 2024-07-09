@@ -99,8 +99,23 @@ header {
     width: 80%;
 }
 .imagen-center{
-    display: block; margin: 0 auto;
+    margin: 0 auto ;
+    width: 60%;
 }
+
+.imagen-cards {
+    width: 80%;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+.row {
+    margin: 0 auto; 
+}
+.card {
+    margin-bottom: 40px; 
+}
+
 .product-details {
     width: 30%;
     padding: 20px;
