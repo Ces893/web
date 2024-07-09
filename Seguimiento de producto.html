@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="https://cdn.userway.org/widget.js" data-account="xa4iQi6Zep"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento del Producto - Mahú</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="Styls.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header id="mainHeader">
+        <a href="Index.html">
+            <img src="logoMahu.png" alt="Logo Mahu" class="logo">
+        </a>
+        <div class="user-options">
+            <i class="bi bi-list"></i>
+            <div>Categorias</div>
+        </div>
+        <div class="search-bar">
+            <input type="text" style="border-radius: 12px;" placeholder="Buscar en Mahú">
+            <button>🔍</button>
+        </div>
+        <div class="user-options">
+            <a href="Seguimiento de producto.html" class="user-options">
+                <div>Mis Pedidos</div>
+            </a>
+            <div onclick="openModal()">Iniciar Sesión</div>
+            <a href="mahu compra.html" class="user-options">
+                <div>🛒</div>
+            </a>
+        </div>
+    </header>
+    <div class="header">
+        ¡Gracias por comprar! Hoy mismo enviamos tu producto! Recuerda seguirnos en nuestro Instagram para enterarte de nuestras promociones!
+    </div>
+    <div class=" container">
+        <i class="bi bi-check2-square"></i>
+        ¡Tu pedido está en camino!
+        
+    </div>
+         <div class="container ">
+            <div class="delivery-info">
+                <p><i class="bi bi-truck"></i> <strong>Llega:</strong> 01/07</p> 
+                <p><strong>Destino:</strong> Pedernal 115</p>
+                <div>
+                    <div>
+                        <p><i class="bi bi-check-circle"></i><strong> Pedido realizado</strong><br>14 de Junio, 23:38</p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-check-circle"></i><strong> Pago confirmado</strong><br>14 de Junio, 23:38</p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-check-circle"></i><strong> Pedido enviado</strong><br>15 de Junio, 18:29<br></p>
+                    </div>
+                    <div>
+                        <p><i class="bi bi-check-circle"></i><strong> Pedido entregado</strong><br>01 de Julio, 15:19<br><strong>CÓD.</strong> 96073634</p>
+                    </div>
+                </div>
+                <div class="track-button">
+                    <a href="#" id="verDetalleBtn">VER SEGUIMIENTO DETALLADO</a>
+                </div>
+            </div>
+
+            <div class="containers">
+                <div class="image-gallery">
+                   
+                    <img src="https://http2.mlstatic.com/D_NQ_NP_748775-MPE76398113017_052024-O.webp" alt="Casaca 1">  <p>Casaca Manga Larga NBA para Hombre Talla L </p>
+                </div>
+            
+                <table class="product-detail">
+                   
+                    <tr>
+                        <td>Subtotal</td>
+                        <td>S/150.00 </td>
+                    </tr>   
+                    <tr>
+                        <td>Costo de envío</td>
+                        <td>S/10.00 </td>
+                    </tr>
+                    <tr>
+                        <th>Total</th>
+                        <th class="total">S/160.00</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container mt-5" id="graficaContainer" style="display: none;">
+            <h2 class="text-center">Seguimiento de Productos</h2>
+            <canvas id="productosEnCaminoChart"></canvas>
+        </div>
+
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <div class="container-login">
+                    <h2>Iniciar sesión</h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn">Iniciar sesión</button>
+                        </div>
+                        <div class="form-group">
+                            
+                            <a href="#" class="social-btnf facebook">
+                                <img src="facebook.png" alt="Facebook">
+                            </a>
+                            <a href="#" class="social-btn google">
+                                <img src="google.png" alt="Google">
+                            </a>
+                        </div>
+                        <p>¿Es tu primera vez? <a href="mahu registrocliente.html">Regístrate</a></p>
+                        <p>¿Olvidaste la contraseña? <a href="#">Recuperar contraseña</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src = "funcionalidad.js"> </script>  
+</body>
+</html>
